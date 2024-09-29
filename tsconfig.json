@@ -16,6 +16,7 @@
     "baseUrl": "./",
     "paths": {
       "@core/*": ["src/core/*"],
+      "@config/*": ["src/config/*"],
       "@data/*": ["src/data/*"],
       "@fixture/*": ["src/global-fixture/*"],
       "@utils/*": ["src/utils/*"],

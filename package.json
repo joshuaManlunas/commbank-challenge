@@ -15,6 +15,7 @@
     "prettier": "^3.3.3"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "tslog": "^4.9.3"
   }
 }
