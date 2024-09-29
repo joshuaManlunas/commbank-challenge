@@ -17,6 +17,7 @@
     "paths": {
       "@core/*": ["src/core/*"],
       "@data/*": ["src/data/*"],
+      "@fixture/*": ["src/global-fixture/*"],
       "@utils/*": ["src/utils/*"],
     }
   },

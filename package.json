@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test --grep='@default'"
+  },
   "keywords": [],
   "author": "Joshua Manlunas",
   "license": "ISC",
@@ -11,5 +13,8 @@
     "@playwright/test": "^1.47.2",
     "@types/node": "^22.7.4",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "tslog": "^4.9.3"
   }
 }

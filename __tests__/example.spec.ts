@@ -1,10 +1,11 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@fixture/global-fixture';
 
 test.describe(
   'Playwright default example test for CI builds',
   { tag: ['@default'] },
   () => {
-    test('has title', async ({ page }) => {
+    test('has title', async ({ page, api }) => {
+      api;
       await page.goto('https://playwright.dev/');
 
       // Expect a title "to contain" a substring.
