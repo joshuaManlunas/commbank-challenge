@@ -1,4 +1,4 @@
-import { test as base } from '@playwright/test';
+import { request, test as base } from '@playwright/test';
 import { ApiHandler } from '@core/api-handler';
 
 type TestResources = {
@@ -6,8 +6,8 @@ type TestResources = {
 };
 
 export const test = base.extend<TestResources>({
-  api: async ({ page }, use) => {
-    const api = new ApiHandler(page);
+  api: async ({}, use) => {
+    const api = new ApiHandler();
     await use(api);
   },
 });
