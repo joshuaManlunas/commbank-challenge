@@ -14,9 +14,8 @@ export class ApiHandler {
   }
 
   async get(endpoint: string): Promise<APIResponse | undefined> {
-    const data = await this.apiContext?.get(endpoint);
     // Data can also be returned as is and parsed in the test
-    return JSON.parse((await data?.text()) as string);
+    return this.apiContext?.get(endpoint);
   }
 
   async post(
