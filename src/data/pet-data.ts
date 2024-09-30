@@ -34,6 +34,7 @@ export const addPetData: PetData = {
   status: 'available',
 };
 
+// An update object for the pet for pet updates
 export const updatePetData: PetData = {
   id: 9999999999999,
   category: {
