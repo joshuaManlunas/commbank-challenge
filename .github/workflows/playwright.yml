@@ -3,7 +3,7 @@ on:
   push:
     branches: [ feature/JoshuaManlunas-CBATest ]
   pull_request:
-    branches: [ main]
+    branches: [ main ]
 jobs:
   test:
     timeout-minutes: 60

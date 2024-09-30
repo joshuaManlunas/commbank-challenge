@@ -23,6 +23,22 @@ test.describe('Pet Store API testing', { tag: ['@regression', '@pet'] }, () => {
     expect(responseBody.status).toBe(addPetData.status);
   });
 
+  test('GET get pet by id', async ({ api }) => {
+    // add the pet to be retrieved later in the test
+    await api.post(`/${process.env.API_VERSION}/pet`, addPetData);
+
+    const response = await api.get(
+      `/${process.env.API_VERSION}/pet/${addPetData.id}`,
+    );
+
+    expect(response?.status()).toBe(200);
+
+    const responseBody = await response?.json();
+    expect(responseBody).toHaveProperty('id');
+    expect(responseBody.name).toBe(addPetData.name);
+    expect(responseBody.status).toBe(addPetData.status);
+  });
+
   test('PUT update pet in store', async ({ api }) => {
     const response = await api.put(
       `/${process.env.API_VERSION}/pet`,
