@@ -25,7 +25,7 @@
 Based on the Swagger definitions found at the [Petstore API](https://petstore.swagger.io/#/):
 
 ### 1. **Pet Entity**
-- **Add Pet (POST /pet)**: Verify adding a pet with all valid fields.
+- **Add Pet (POST /pet)**: Verify adding a pet with relevant fields.
 - **Update Pet (PUT /pet)**: Validate updating an existing pet with new details.
 - **Get Pet by ID (GET /pet/{petId})**: Check retrieval of a pet using a valid ID.
 - **Delete Pet (DELETE /pet/{petId})**: Ensure deletion works correctly for a given pet ID.
@@ -36,6 +36,6 @@ Based on the Swagger definitions found at the [Petstore API](https://petstore.sw
 - **Delete Order (DELETE /store/order/{orderId})**: Validate order deletion.
 
 ### 3. **User Entity**
-- **Create User (POST /user)**: Add a user and verify all fields.
+- **Create User (POST /user)**: Add a user and verify relevant fields.
 - **Get User by Username (GET /user/{username})**: Retrieve details of a specific user.
 - **Update User (PUT /user/{username})**: Update user info.
